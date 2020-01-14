@@ -13,10 +13,7 @@ print(f1(1, 2))
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum. Google for "python arbitrary arguments" and look for "*args"
 def f2(*args):
-    x = 0
-    for arg in args:
-        x = x + arg
-    return x
+    return sum(args)
 # YOUR CODE HERE
 
 print(f2(1))                    # Should print 1
