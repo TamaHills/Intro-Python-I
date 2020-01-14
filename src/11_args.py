@@ -54,8 +54,8 @@ print(f3(8))     # Should print 9
 
 def f4(**args):
     for arg in args:
-        str = f"key: {arg}, value: {args[arg]}"
-        print(str)
+        string = f"key: {arg}, value: {args[arg]}"
+        print(string)
 
 
 # Should print
