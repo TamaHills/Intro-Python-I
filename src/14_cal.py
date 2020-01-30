@@ -22,3 +22,17 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+now = datetime.now()
+
+if len(sys.argv) == 1:
+    print(calendar.monthcalendar(now.year, now.month))
+elif len(sys.argv) == 2:
+    _, month = sys.argv
+    print(calendar.monthcalendar(now.year, int(month)))
+elif len(sys.argv) == 3:
+    _, month, year = sys.argv
+    print(calendar.monthcalendar(int(year), int(month)))
+else:
+    print('invalid arguments please use this format: 14_cal.py month [year]')
+    exit()
